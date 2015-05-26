@@ -13,5 +13,4 @@ Available on [Docker Hub](https://registry.hub.docker.com/u/serveurweb/docker-se
 
 Simplest version:
 
-    docker run -d -v /etc/vpnserver/vpn_server.config:/usr/local/vpnserver/vpn_server.config --net host --name softether serveurweb/docker-se
-
+    docker run -d --net host --name softether serveurweb/docker-se
