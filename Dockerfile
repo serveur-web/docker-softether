@@ -1,7 +1,7 @@
 # SoftEther VPN server
 
 FROM debian:8
-MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
+MAINTAINER Rural Telecom <support@rural-telecom.fr>
 
 ENV VERSION v4.15-9546-beta-2015.04.05
 WORKDIR /usr/local/vpnserver
