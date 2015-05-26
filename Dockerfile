@@ -19,6 +19,8 @@ RUN apt-get update &&\
 
 ADD runner.sh /usr/local/vpnserver/runner.sh
 RUN chmod 755 /usr/local/vpnserver/runner.sh
+RUN touch /usr/local/vpnserver/vpn_server.config
+RUN chmod 755 /usr/local/vpnserver/vpn_server.config
 
 EXPOSE 80/tcp 53/tcp 443/tcp 992/tcp 1194/tcp 1194/udp 5555/tcp 8080/tcp 500/udp 4500/udp
 
