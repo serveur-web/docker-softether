@@ -2,17 +2,16 @@
 
 This will deploy a fully functional [SoftEther VPN](https://www.softether.org) server as a docker image.
 
-Available on [Docker Hub](https://registry.hub.docker.com/u/frosquin/softether/).
+Available on [Docker Hub](https://registry.hub.docker.com/u/serveurweb/docker-se/).
 
 ## Download
 
-    docker pull frosquin/softether
+    docker pull serveurweb/docker-se
 
 ## Run
 
 
 Simplest version:
 
-    touch /etc/vpnserver/vpn_server.config
-    docker run -d -v /etc/vpnserver/vpn_server.config:/usr/local/vpnserver/vpn_server.config --net host --name softether frosquin/softether
+    docker run -d -v /etc/vpnserver/vpn_server.config:/usr/local/vpnserver/vpn_server.config --net host --name softether serveurweb/docker-se
 
